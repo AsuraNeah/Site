@@ -13,3 +13,5 @@ if($conn === false){
     die("ERREUR : Impossible de se connecter. " . mysqli_connect_error());
 }
 ?>
+
+//@Phong Al Kafir / @Oussama-Sama 2021
