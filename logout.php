@@ -9,3 +9,5 @@
 		header("Location: login.php");
 	}
 ?>
+
+<!--@Phong Al Kafir / @AsuraNeah -->
