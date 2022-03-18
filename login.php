@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>KafirCorp - Connexion</title>
+	<link rel="shortcut icon" href="Image/DogeIco.ico">
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <?php
 require('config.php');
-require('style.css')
 session_start();
 
 if (isset($_POST['username'])){
@@ -25,8 +26,8 @@ if (isset($_POST['username'])){
 	}
 }
 ?>
+
 <form class="box" action="" method="post" name="login">
-<h1 class="box-logo box-title"><a href="https://waytolearnx.com/">WayToLearnX.com</a></h1>
 <h1 class="box-title">Connexion</h1>
 <input type="text" class="box-input" name="username" placeholder="Nom d'utilisateur">
 <input type="password" class="box-input" name="password" placeholder="Mot de passe">
@@ -39,4 +40,4 @@ if (isset($_POST['username'])){
 </body>
 </html>
 
-//@Phong Al Kafir / Oussama-Sama 2022
+<!--@Phong Al Kafir / @AsuraNeah -->
