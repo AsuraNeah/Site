@@ -6,8 +6,24 @@ body {
   background-size: 1920px 1080px;
   font-family:Arial;
   font-weight: bold;
+  cursor: grab;
   
 }
+/* Selection de couleur */
+
+::-moz-selection {
+  color: #fff;
+  background-color: #5E72E4;
+}
+::selection {
+  color: #fff;
+  background-color: #5E72E4;
+
+
+}
+
+
+/* Connexion */
 .box {
   border: 1px solid #24284C;
   padding: 30px 25px 10px 25px;
@@ -74,6 +90,7 @@ h1.box-title {
 .sucess{
 	text-align: center;
 	color: white;
+
 }
 .sucess a {
 	text-decoration: none;
@@ -98,17 +115,69 @@ p.errorMessage {
       margin: -27px -26px 26px;
       border-radius: 10px;
 }
+ /* Menu et SubMenu*/
 
-/* Selection de couleur */
-
-::-moz-selection {
-  color: #fff;
-  background-color: #5E72E4;
-}
-::selection {
-  color: #fff;
-  background-color: #5E72E4;
-
+nav > ul{
+    margin: 0px;
+    padding: 0px;
 
 }
 
+nav{
+  width: 100%;
+  background-color: #24284C;
+
+}
+nav > ul::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav > ul > li{
+      float:left;
+      position: relative;
+  
+}
+
+nav > ul > li > a{
+  padding: 20px 30px;
+  color: #fff;
+}
+
+nav > li{
+  list-style-type:none;
+  
+}
+
+.submenu{
+  display:none;
+}
+
+nav a{
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+nav li:hover .submenu{
+  display:  inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 1000;
+}
+
+.submenu li{
+  border-bottom: 1px solid #24284C;
+}
+
+.submenu li a{
+  padding: 15px 30px;
+  font-size: 13px; 
+  color: #24284C;
+  width: 270px;
+}
+
+/* @Phong Al Kafir / @AsuraNeah */
