@@ -16,16 +16,19 @@
 
 	<title>KafirCorp - Espace membre</title>
     <link rel="shortcut icon" href="Image/DogeIco.ico">
-	<link rel="stylesheet" href="style.css" />
-
+	<link rel="stylesheet" href="style.css" />	
 	</head>
-	<body>
-	<!--	<div class="sucess">
+
+<body>
+
+	<!-- Initialisation Texte Bienvenu -->
+	<div class="sucess">
 		<h1>Bienvenue <?php echo $_SESSION['username']; ?>!</h1>
 		<p>C'est votre tableau de bord.</p>
 		<a href="logout.php">Déconnexion</a>
 		</div>
--->	
+
+		<!-- Insertion Menu/Submenu-->
 		<nav>
 			<ul>
 				<li class="menu-acceuil"><a href="index.php">Acceuil</a></li>
@@ -53,10 +56,13 @@
                     <li<a href="dev_menu.php">>Création Menu Déroulant</li>
                     <li>Création Cathégorie</li>
                     <li>Géométrie</li>
+					
 				</ul>
             </li>
-
 		</nav>
+		<!-- Fin Menu/Submenu-->
+
+
 	</body>
 </html>
 
