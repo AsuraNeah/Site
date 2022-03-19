@@ -86,9 +86,12 @@ h1.box-title {
 .box-input:focus {
     outline: none;
     border-color:#5E72E4;
+
+/* Message Bienvenu */
 }
 .sucess{
-	text-align: center;
+  text-align: center;
+  position: relative;
 	color: white;
 
 }
@@ -96,6 +99,7 @@ h1.box-title {
 	text-decoration: none;
 	color: #5E72E4;
 }
+
 p.errorMessage {
     background-color: #5E72E4;
     border: #24284C 1px solid;
@@ -116,52 +120,50 @@ p.errorMessage {
       border-radius: 10px;
 }
  /* Menu et SubMenu*/
-
-nav > ul{
-    margin: 0px;
-    padding: 0px;
-
-}
-
 nav{
   width: 100%;
   background-color: #24284C;
 
 }
+
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+
 nav > ul::after{
-  content: "";
-  display: block;
-  clear: both;
+    content: "";
+    display: block;
+    clear: both;
 }
 
 nav > ul > li{
-      float:left;
-      position: relative;
-  
+  float: left;
+  position: relative;
 }
-
-nav > ul > li > a{
+nav > ul > li > a {
   padding: 20px 30px;
   color: #fff;
 }
+nav > ul > li:hover a{
+  padding: 15px 30px 20px 30px;
+}
 
-nav > li{
-  list-style-type:none;
-  
+nav li{
+  list-style-type: none;
 }
 
 .submenu{
-  display:none;
+  display: none;
 }
 
 nav a{
   display: inline-block;
   text-decoration: none;
-
 }
 
 nav li:hover .submenu{
-  display:  inline-block;
+  display: inline-block;
   position: absolute;
   top: 100%;
   left: 0px;
@@ -171,13 +173,75 @@ nav li:hover .submenu{
 
 .submenu li{
   border-bottom: 1px solid #24284C;
+
 }
 
 .submenu li a{
-  padding: 15px 30px;
-  font-size: 13px; 
+  padding: 15px 30px ;
+  font-size: 13px;
   color: #24284C;
   width: 270px;
+}
+
+.menu-acceuil:hover{
+  border-top: 5px solid #fff;
+  background-color:#5E72E4;
+  opacity : 0.90;
+}
+.menu-stock:hover{
+  border-top: 5px solid #fff;
+  background-color:#5E72E4;
+  opacity : 0.90;
+  
+}
+.menu-client:hover{
+  border-top: 5px solid #fff;
+  background-color:#5E72E4;
+  opacity : 0.75;
+}
+.menu-dev:hover{
+  border-top: 5px solid #fff;
+  background-color:#5E72E4;
+  opacity : 0.90;
+}
+
+.menu-acceuil .submenu{
+  background-color: #5E72E4;
+  opacity : 0.90;
+}
+.menu-stock .submenu{
+  background-color: #5E72E4;
+  opacity : 0.90;
+}
+.menu-client .submenu{
+  background-color: #5E72E4;
+  opacity : 0.90;
+}
+.menu-dev .submenu{
+  background-color: #5E72E4;
+  opacity : 0.90;
+}
+
+.submenu li:hover a{
+  color: #5E72E4;
+  opacity : 0.90;
+  font-weight: bold;
+}
+.menu-acceuil .submenu li:hover{
+  background-color:#5E72E4 ;
+  opacity : 0.90;
+}
+.menu-stock .submenu li:hover{
+  background-color:#5E72E4 ;
+  opacity : 0.90;
+}
+.menu-client .submenu li:hover{
+  background-color:#5E72E4 ;
+  opacity : 0.90;
+}
+.menu-dev .submenu li:hover{
+  background-color:#5E72E4 ;
+  opacity : 0.90;
 }
 
 /* @Phong Al Kafir / @AsuraNeah */
