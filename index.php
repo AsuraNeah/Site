@@ -30,9 +30,9 @@
 				<!-- Initialisation Menu/SMenu Stock-->	
 			<li><a href="stock.php">Stock</a>
 				<ul>
-					<li><a href="#">Mise à jour Stock</a></li>
-        			<li><a href="#">Information Stock</a></li>
-        			<li><a href="#">Création produit</a></li>
+				<li><a href="udpstock.php">Mise à jour Stock</a></li>
+        			<li><a href="infstock.php">Information Stock</a></li>
+        			<li><a href="addstock.php">Création produit</a></li>
         			
 			
 				</ul>			
@@ -41,9 +41,9 @@
 				<!-- Initialisation Menu/SMenu Client-->	
 				<li><a href="client.php">Client</a>
 				<ul>
-					<li><a href="#">Mise à jour Client</a></li>
-        			<li><a href="#">Fiche Client</a></li>
-        			<li><a href="#">Création Client</a></li>
+				<li><a href="udpclient.php">Mise à jour Client</a></li>
+        			<li><a href="infclient.php">Fiche Client</a></li>
+        			<li><a href="addclient.php">Création Client</a></li>
         			
 			
 				</ul>			
@@ -52,9 +52,9 @@
 				<!-- Initialisation Menu/SMenu Dev-->		
 				<li><a href="dev.php">Informations DEV</a>
 				<ul>
-					<li><a href="#">Création Menu Déroulant</a></li>
-        			<li><a href="#">Création Cathégorie</a></li>
-        			<li><a href="#">Géométrie</a></li>
+				<li><a href="form.php">Création Formulaire</a></li>
+				<li><a href="addmdev.php">Création Menu Déroulant</a></li>
+        			<li><a href="geom.php">Géométrie</a></li>
         			
 			
 					
@@ -76,4 +76,3 @@
 </html>
 
 <!--@Phong Al Kafir / @AsuraNeah -->
-
