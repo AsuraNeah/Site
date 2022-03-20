@@ -36,7 +36,7 @@ h1.box-logo a {
   text-decoration:none;
 }
 h1.box-title {
-  color: #ddd;
+  color: #fff;
   background: #24284C;
   font-weight: 300;
   padding: 10px px;
@@ -65,13 +65,13 @@ h1.box-title {
   text-align:center;
   margin-bottom:0px;
   font-size:13px;
-  color: #ddd;
+  color: #fff;
 }
 .box-register a
 {
   text-decoration:none;
   font-size:12px;
-  color:#ddd;
+  color:#fff;
 }
 .box-input {
   font-size: 14px;
@@ -90,10 +90,15 @@ h1.box-title {
 /* Message Bienvenu */
 }
 .sucess{
-  text-align: center;
-  position: relative;
-	color: white;
+  
+  width: 400px;
+  margin: 0 auto;
+  background: #24284C;
+  border-radius: 10px;
 
+  padding: 10px;
+  color: white;
+  text-align: center;
 }
 .sucess a {
 	text-decoration: none;
@@ -120,128 +125,72 @@ p.errorMessage {
       border-radius: 10px;
 }
  /* Menu et SubMenu*/
-nav{
+
+ #wrap {
   width: 100%;
-  background-color: #24284C;
-
-}
-
-nav > ul{
-    margin: 0px;
-    padding: 0px;
-}
-
-nav > ul::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-
-nav > ul > li{
-  float: left;
+  height: 50px;
+  margin: 0;
+  z-index: 99;
   position: relative;
-}
-nav > ul > li > a {
-  padding: 20px 30px;
-  color: #fff;
-}
-nav > ul > li:hover a{
-  padding: 15px 30px 20px 30px;
+  background-color: #24284C;
 }
 
-nav li{
-  list-style-type: none;
-}
-
-.submenu{
-  display: none;
-}
-
-nav a{
-  display: inline-block;
-  text-decoration: none;
-}
-
-nav li:hover .submenu{
-  display: inline-block;
+.navbar {
+  height: 50px;
+  padding: 0;
+  margin: 0;
   position: absolute;
-  top: 100%;
-  left: 0px;
-  padding: 0px;
-  z-index: 1000;
 }
 
-.submenu li{
-  border-bottom: 1px solid #24284C;
-
-}
-
-.submenu li a{
-  padding: 15px 30px ;
-  font-size: 13px;
-  color: #24284C;
-  width: 270px;
-}
-
-.menu-acceuil:hover{
-  border-top: 5px solid #fff;
-  background-color:#5E72E4;
-  opacity : 0.90;
-}
-.menu-stock:hover{
-  border-top: 5px solid #fff;
-  background-color:#5E72E4;
-  opacity : 0.90;
+.navbar li {
+  height: auto;
+  width: 135.8px;
+  float: left;
+  text-align: center;
+  list-style: none;
+  font: normal bold 13px/1em Arial;
+  padding: 0;
+  margin: 0;
+  background-color: #24284C;
   
 }
-.menu-client:hover{
-  border-top: 5px solid #fff;
-  background-color:#5E72E4;
-  opacity : 0.75;
-}
-.menu-dev:hover{
-  border-top: 5px solid #fff;
-  background-color:#5E72E4;
-  opacity : 0.90;
+
+.navbar a {
+  padding: 18px 0;
+  border-left: 1px solid #24284C;
+  text-decoration: none;
+  color: white;
+  display: block;
 }
 
-.menu-acceuil .submenu{
-  background-color: #5E72E4;
-  opacity : 0.90;
-}
-.menu-stock .submenu{
-  background-color: #5E72E4;
-  opacity : 0.90;
-}
-.menu-client .submenu{
-  background-color: #5E72E4;
-  opacity : 0.90;
-}
-.menu-dev .submenu{
-  background-color: #5E72E4;
-  opacity : 0.90;
+.navbar li:hover,
+a:hover {
+  background-color: #24284C;
 }
 
-.submenu li:hover a{
-  color: #5E72E4;
-  opacity : 0.90;
-  font-weight: bold;
-}
-.menu-acceuil .submenu li:hover{
-  background-color:#5E72E4 ;
-  opacity : 0.90;
-}
-.menu-stock .submenu li:hover{
-  background-color:#5E72E4 ;
-  opacity : 0.90;
-}
-.menu-client .submenu li:hover{
-  background-color:#5E72E4 ;
-  opacity : 0.90;
-}
-.menu-dev .submenu li:hover{
-  background-color:#5E72E4 ;
-  opacity : 0.90;
+.navbar li ul {
+  display: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
+.navbar li:hover ul {
+  display: block;
+}
+
+.navbar li ul li {
+  background-color: #24284C;
+}
+
+.navbar li ul li a {
+  border-left: 1px solid #24284C;
+  border-right: 1px solid #24284C;
+  border-top: 1px solid #24284C;
+  border-bottom: 1px solid #24284C;
+}
+
+.navbar li ul li a:hover {
+  background-color: #5E72E4;
+}
 /* @Phong Al Kafir / @AsuraNeah */
