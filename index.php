@@ -21,49 +21,59 @@
 
 <body>
 
-	<!-- Initialisation Texte Bienvenu -->
-	<div class="sucess">
-		<h1>Bienvenue <?php echo $_SESSION['username']; ?>!</h1>
-		<p>C'est votre tableau de bord.</p>
-		<a href="logout.php">Déconnexion</a>
-		</div>
-
 		<!-- Insertion Menu/Submenu-->
-		<nav>
-			<ul>
-				<li class="menu-acceuil"><a href="index.php">Acceuil</a></li>
+	<div id="wrap">
+	<ul class="navbar">
+		
+			<li><a href="index.php">Acceuil</a></li>
 
 				<!-- Initialisation Menu/SMenu Stock-->	
-				<li class="menu-stock">><a href="stock.php">Stock</a></li>
-					<ul class="submenu">
-                    <li><a href="upstock.php">Mise à jour Stock</li>
-                    <li><a href="ifstock.php">Information Stock</li>
-                    <li><a href="addstock.php">Création produit</li>
-                </ul>
+			<li><a href="stock.php">Stock</a>
+				<ul>
+					<li><a href="#">Mise à jour Stock</a></li>
+        			<li><a href="#">Information Stock</a></li>
+        			<li><a href="#">Création produit</a></li>
+        			
+			
+				</ul>			
+			</li>
 
 				<!-- Initialisation Menu/SMenu Client-->	
-				<li class="menu-client">><a href="client.php">Client</a></li>
-					<ul class="submenu">
-                    <li>Mise à jour Client</li>
-                    <li>Fiche Client</li>
-                    <li>Création Client</li>
-                </ul>
-            </li>
+				<li><a href="client.php">Client</a>
+				<ul>
+					<li><a href="#">Mise à jour Client</a></li>
+        			<li><a href="#">Fiche Client</a></li>
+        			<li><a href="#">Création Client</a></li>
+        			
+			
+				</ul>			
+			</li>
 
 				<!-- Initialisation Menu/SMenu Dev-->		
-				<li class="menu-dev">><a href="dev.php">Informations DEV</a></li>
-					<ul class="submenu">
-                    <li<a href="dev_menu.php">>Création Menu Déroulant</li>
-                    <li>Création Cathégorie</li>
-                    <li>Géométrie</li>
+				<li><a href="dev.php">Informations DEV</a>
+				<ul>
+					<li><a href="#">Création Menu Déroulant</a></li>
+        			<li><a href="#">Création Cathégorie</a></li>
+        			<li><a href="#">Géométrie</a></li>
+        			
+			
 					
 				</ul>
             </li>
-		</nav>
-		<!-- Fin Menu/Submenu-->
+	</ul>
+	</div>
+
+	<!-- Initialisation Texte Bienvenu -->
+	<div class="sucess">
+		<h2>Bienvenue <?php echo $_SESSION['username']; ?>!</h2>
+		<p>Ceci est votre tableau de bord.</p>
+		<a href="logout.php">Déconnexion</a>
+		</div>
+		
 
 
 	</body>
 </html>
 
 <!--@Phong Al Kafir / @AsuraNeah -->
+
